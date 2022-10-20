@@ -52,6 +52,7 @@ main {
         display: flex;
         flex-direction: column;
         padding: 5%;
+        margin-top: 40px;
     }
 
     img {
@@ -76,6 +77,10 @@ main {
 
     .bottom-btn {
        margin-right: auto;
+    }
+
+    .courses {
+        overflow: scroll;
     }
 
 }
