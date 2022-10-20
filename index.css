@@ -1,5 +1,5 @@
 body {
-    margin: auto;
+    margin: 0;
     background-color: rgb(1, 1, 43);
 }
 
@@ -7,39 +7,89 @@ main {
     margin: auto;
     width: 80%;
 }
-
 .main-container {
     border: 1px solid wheat;
     background-color: beige;
     text-transform: uppercase;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    height: 63px;
+}
+
+/*Media Qury targeting tablets and smartphones*/
+@media  screen and (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    .main-container {
+        display: flex;
+        align-items: center;
+        height: 63px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    li {
+        font-size: medium;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: normal;
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .opening-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 15%;
+    }
+
+    .intro, .project-info{
+        display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+        align-content: space-between;
+    }
+
+    .the-team, .projects {
+        height: 600px;
+    }
+
+}
+
+img {
+    width: 500px;
+    border-radius: 10%;
 }
 
 a {
     text-decoration: none;
-    font-size: medium;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    padding: 21px;
-    color: black;
+    color: #333;
+    padding: 12px;
 }
 
 .container {
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    padding-right: 40px;
 }
 
 
 .opening-info {
-    padding: 60px;
+    padding: 30px;
     display: flex;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -55,36 +105,16 @@ a {
 }
 
 .heading {
-    width: 500px;
     text-transform: capitalize;
     line-height: 2.3rem;
 }
 
 .personal-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: auto;
     padding-top: 20px;
 }
 
 .myteam {
     color: white;
-}
-
-.people {
-    background: radial-gradient(circle, rgb(230, 252, 105) 20%,  rgb(184, 153, 51) 30%, #333 75%);
-    width: 200px;
-    height: 240px;
-    flex: 1;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-img {
-    height: 300px;
-    width: 230px;
-    border-radius: 50%;
 }
 
 .courses {
@@ -128,12 +158,11 @@ p {
 
 .projects {
     background-color: rgb(150, 144, 144);
-    height: 600px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 }
 
-.prod {
+.prod, .people {
     height: 200px;
     width: 200px;
     background: radial-gradient(circle at 100%, white 3%, blue 40%, black 80%);
@@ -150,8 +179,9 @@ p {
 .text {
     margin: 10px;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
+    color: white;
 }
 header {
     text-align: center;
@@ -162,14 +192,11 @@ header {
 }
 
 .logo {
-    margin-left: auto;
-    margin-right: 300px;
     background: radial-gradient(circle at 100%, white 3%, blue 40%, rgb(2, 2, 2) 80%);
     padding: 8px;
     font-family: cursive;
     font-weight: bolder;
     font-size: x-large;
-    font-stretch: expanded;
     border-radius: 50%;
     margin-top: auto;
     transition: transform .6s ease-in-out;
