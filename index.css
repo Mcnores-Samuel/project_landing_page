@@ -8,7 +8,6 @@ main {
     width: 80%;
 }
 .main-container {
-    border: 1px solid wheat;
     background-color: beige;
     text-transform: uppercase;
 }
@@ -46,7 +45,7 @@ main {
 
     .logo {
         margin-left: auto;
-        margin-right: auto;
+        margin-right: 18%;
     }
 
     .opening-info {
@@ -70,6 +69,15 @@ main {
         height: 600px;
     }
 
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-btn {
+       margin-right: auto;
+    }
+
 }
 
 img {
@@ -81,12 +89,25 @@ a {
     text-decoration: none;
     color: #333;
     padding: 12px;
+    font-size: medium;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
 }
-
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 63px;
+}
 .container {
     list-style-type: none;
+    display: flex;
 }
 
+a {
+    margin-left: auto;
+}
 
 .opening-info {
     padding: 30px;
@@ -123,7 +144,19 @@ a {
 }
 .contacts {
     background-color: azure;
-    height: 300px;
+    width: 80%;
+    margin: 16px auto;
+    padding: 5px;
+    
+}
+
+.contact-info {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+   
 }
 
 .footer {
@@ -147,6 +180,10 @@ a:hover {
     background-color: rgb(89, 89, 194);
     color: beige;
 
+}
+
+.bottom-btn {
+    margin-left: auto;
 }
 
 p {
@@ -199,6 +236,8 @@ header {
     font-size: x-large;
     border-radius: 50%;
     margin-top: auto;
+    margin-right: 50%;
+    margin-left: 8%;
     transition: transform .6s ease-in-out;
 }
 .inlogo {
@@ -221,3 +260,4 @@ span {
     margin-top: 60px;
     transform: scale(1.4);
 }
+
