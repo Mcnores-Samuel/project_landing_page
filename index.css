@@ -51,6 +51,7 @@ main {
     .opening-info {
         display: flex;
         flex-direction: column;
+        padding: 5%;
     }
 
     img {
@@ -99,6 +100,8 @@ a {
     align-items: center;
     justify-content: center;
     height: 63px;
+    position: fixed;
+    width: 100%;
 }
 .container {
     list-style-type: none;
@@ -110,11 +113,13 @@ a {
 }
 
 .opening-info {
-    padding: 30px;
+    padding-top: 8%;
     display: flex;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.7rem;
+
+
 }
 
 .me {
@@ -184,6 +189,12 @@ a:hover {
 
 .bottom-btn {
     margin-left: auto;
+}
+
+.button:hover {
+    transition: transform .4s ease-in-out;
+    transform: scale(1.2);
+    box-shadow: -3px 3px 3px rgb(39, 98, 100);
 }
 
 p {
