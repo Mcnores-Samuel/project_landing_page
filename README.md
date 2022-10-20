@@ -1,1 +1,1 @@
-Landing Page : An odin project exercise, testing aquired html and css foundation skills.
+Landing Page : An odin project exercise, testing acquired html and css foundation skills.
