@@ -26,7 +26,7 @@ main {
     .main-container {
         display: flex;
         align-items: center;
-        height: 63px;
+        height: auto;
     }
 
     .container {
@@ -135,7 +135,7 @@ a {
 }
 
 .personal-info {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .myteam {
@@ -144,11 +144,12 @@ a {
 
 .courses {
     background-color: rgb(165, 165, 108);
-    height: 300px;
+    height: 400px;
 }
 .contacts {
     background-color: azure;
     width: 80%;
+    height: auto;
     margin: 16px auto;
     padding: 5px;
     
