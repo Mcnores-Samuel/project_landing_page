@@ -62,7 +62,6 @@ main {
     .intro, .project-info{
         display: flex;
         flex-wrap: wrap;
-        height: 400px;
         align-content: space-between;
     }
 
